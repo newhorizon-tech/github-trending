@@ -3,6 +3,6 @@ import trendingReducer from './trendingSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: trendingReducer,
+    trending: trendingReducer,
   },
 });
