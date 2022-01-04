@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import trendingReducer from './trendingSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    counter: trendingReducer,
   },
 });
