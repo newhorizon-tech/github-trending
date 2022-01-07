@@ -7,7 +7,6 @@ const apiTwo = 'https://trendings.herokuapp.com/repo';
 const trendingAsync = createAsyncThunk(
   'rockets/fetchProjects',
   async () => {
-    console.log("Start");
     const response = await fetch(corsURL+apiOne);
     const data = await response.json();
     return data;
