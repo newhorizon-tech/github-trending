@@ -4,15 +4,29 @@ import './index.css';
 import App from './App';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
-import * as serviceWorker from './serviceWorker';
+  import {
+  Routes, Route, BrowserRouter as Router
+} from 'react-router-dom';
+
+import ProjectCard from './components/ProjectCard'
+import TrendingProject from './components/TrendingProject'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+     <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<App />}
+        />
+        <Route
+          path="/projects/:projectId"
+          element={<TrendingProject />}
+        />
+      </Routes>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-serviceWorker.unregister();
