@@ -2,7 +2,12 @@ const ProjectCard = (props) => {
   const {project} = props
   return (
     <div className="project-card">
-      {project.repositoryName}
+      <span className="name">
+        {project.repositoryName}
+      </span>
+      <span>
+      {project.starsSince}
+      </span>
     </div>
 
   );

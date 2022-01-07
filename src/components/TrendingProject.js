@@ -1,3 +1,6 @@
-const TrendingProject = () => {
-  return (<h1> Project </h1>);
+const TrendingProject = (props) => {
+  const {project} = props
+  return (
+    <h1> {project.repositoryName} </h1>
+  );
 }
