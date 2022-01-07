@@ -20,10 +20,13 @@ const App = () => {
   }, []);
 
   return (
+    
     <div>
-      <h1> Github Trending </h1>
+      <div id="header">
+        <h1> Github Trending </h1>
+      </div>
       <div id="project-cards">
-      {projects.map(project => <ProjectCard key={project.rank} project={project} /> )}
+        {projects.map(project => <ProjectCard key={project.rank} project={project} /> )}
       </div>
     </div>
   );

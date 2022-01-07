@@ -7,3 +7,22 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
+#header {
+  height: 150px;
+}
+
+#project-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  height: 150px;
+}
