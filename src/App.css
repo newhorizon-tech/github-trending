@@ -9,6 +9,10 @@ html, body {
 }
 
 #header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 110px;
   background: green;
   color: white;
@@ -21,8 +25,11 @@ html, body {
 }
 
 .project-card {
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: red;
   border: 1px solid black;
   color: white;
@@ -37,4 +44,22 @@ html, body {
 .project-body p, .built-box {
   padding: 10px 0;
   border: 1px solid black;
+}
+
+
+.creators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creators img {
+  width: 60px;
+  margin: 0 2px;
+}
+
+.back-button {
+  background: red;
+  color: white;
+  border: none;
 }
