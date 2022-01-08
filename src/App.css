@@ -3,7 +3,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -41,11 +42,11 @@ html, body {
   flex-direction: column;
 }
 
-.project-body p, .built-box {
+.project-body p,
+.built-box {
   padding: 10px 0;
   border: 1px solid black;
 }
-
 
 .creators {
   display: flex;
