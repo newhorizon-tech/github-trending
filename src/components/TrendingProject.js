@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { SpinnerInfinity } from 'spinners-react';
 import { trendingAsync } from '../redux/trendingSlice';
 import ProjectDetails from './ProjectDetails';
 
@@ -20,7 +21,18 @@ const TrendingProject = () => {
 
   return (
     <div>
-      {loading ? 'Loading' : ''}
+      {loading
+        ? (
+          <span className="loading">
+            <SpinnerInfinity
+              size={71}
+              thickness={135}
+              speed={135}
+              color={getComputedStyle(document.documentElement).getPropertyValue('--light')}
+              secondaryColor={getComputedStyle(document.documentElement).getPropertyValue('--dark')}
+            />
+          </span>
+        ) : ''}
       {loaded ? <ProjectDetails project={project} /> : ''}
     </div>
   );

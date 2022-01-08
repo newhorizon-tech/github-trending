@@ -2,6 +2,7 @@ import './App.css';
 
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { SpinnerInfinity } from 'spinners-react';
 import { trendingAsync, search } from './redux/trendingSlice';
 
 import ProjectCard from './components/ProjectCard';
@@ -40,8 +41,20 @@ const App = () => {
         <h1> Github Trending </h1>
         <input id="search-bar" placeholder="Search" onChange={(e) => handleSearch(e)} value={searchTerm} />
       </div>
+      {loading
+        ? (
+          <span className="loading">
+            <SpinnerInfinity
+              size={71}
+              thickness={135}
+              speed={135}
+              color={getComputedStyle(document.documentElement).getPropertyValue('--light')}
+              secondaryColor={getComputedStyle(document.documentElement).getPropertyValue('--dark')}
+            />
+          </span>
+        )
+        : ''}
       <div id="project-cards">
-        {loading ? 'Loading' : ''}
         {projects.map((project) => <ProjectCard key={project.rank} project={project} />)}
       </div>
     </div>
