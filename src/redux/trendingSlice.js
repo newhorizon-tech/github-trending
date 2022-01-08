@@ -14,8 +14,14 @@ const trendingAsync = createAsyncThunk(
 
 const trendingSlice = createSlice({
   name: 'TrendingProjects',
-  initialState: { status: '', projects: [] },
-  reducers: { },
+  initialState: { search: '', status: '', projects: [] },
+  reducers: {
+    search: (state, action) => {
+      const newState = { ...state };
+      newState.search = action.payload;
+      return newState;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(trendingAsync.pending, (state) => {
@@ -33,5 +39,7 @@ const trendingSlice = createSlice({
 });
 
 export default trendingSlice.reducer;
+
+export const { search } = trendingSlice.actions;
 
 export { trendingAsync };
