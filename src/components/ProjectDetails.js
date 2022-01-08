@@ -14,7 +14,7 @@ const ProjectDetails = (props) => {
     const limit = 23;
     let trimmedString = str;
     if (str.length > limit) {
-      trimmedString = `${str.substring(0, limit - 3)}...`.split('-').join(' ');
+      trimmedString = `${str.substring(0, limit - 3)}...`;
     }
     return trimmedString;
   };

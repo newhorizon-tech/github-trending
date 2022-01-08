@@ -1,6 +1,6 @@
 # github-trending
 
-Github Trending is a Single Page Application built in React
+Github Trending allows you to browse through the trending software projects on Github
 
 ## Features
 
@@ -36,7 +36,7 @@ Github Trending is a Single Page Application built in React
 
 ## Acknowledgement
 
-Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+Inspired by [Nelson Sakwa's design on Behance](https://www.behance.net/sakwadesignstudio).
 
 
 ## 🤝 Contributing
