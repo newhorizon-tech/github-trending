@@ -8,7 +8,6 @@ const trendingAsync = createAsyncThunk(
   async () => {
     const response = await fetch(corsURL + api);
     const data = await response.json();
-    console.log(data);
     return data;
   },
 );
