@@ -10,6 +10,15 @@ const ProjectDetails = (props) => {
     weekly: 'this week',
     monthly: 'this month',
   };
+  const trimString = (str) => {
+    const limit = 23;
+    let trimmedString = str;
+    if (str.length > limit) {
+      trimmedString = `${str.substring(0, limit - 3)}...`.split('-').join(' ');
+    }
+    return trimmedString;
+  };
+
   return (
     <>
       <div id="header">
@@ -21,7 +30,7 @@ const ProjectDetails = (props) => {
           {'> Back'}
         </button>
         <h1>
-          {project.repositoryName}
+          {trimString(project.repositoryName)}
         </h1>
         <h2>
           #
@@ -32,38 +41,40 @@ const ProjectDetails = (props) => {
       <div className="project-body">
         <p>
           Repo owner:
-          {project.username}
+          {` ${project.username}`}
         </p>
         <p>
           Stars:
-          {project.totalStars}
+          {` ${project.totalStars}`}
         </p>
         <p>
           Forks:
-          {project.forks}
+          {` ${project.forks}`}
         </p>
         <p>
           Description:
-          {project.description}
+          {` ${project.description}`}
         </p>
         <p>
           Language:
-          {project.language}
+          {` ${project.language}`}
         </p>
         <div className="built-box">
-          <span> Built by - </span>
-          {creators.map((user) => (
-            <div key={user.username} className="built-user">
-              <a href={user.url}>
-                <img
-                  className="avatars"
-                  src={user.avatar}
-                  alt={user.username}
-                  title={user.username}
-                />
-              </a>
-            </div>
-          ))}
+          <span> Built by: </span>
+          <div className="creators">
+            {creators.map((user) => (
+              <div key={user.username} className="built-user">
+                <a href={user.url}>
+                  <img
+                    className="avatars"
+                    src={user.avatar}
+                    alt={user.username}
+                    title={user.username}
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

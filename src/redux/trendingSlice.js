@@ -1,8 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const corsURL = 'https://cors-for.herokuapp.com/';
-const api = 'https://gh-trending-api.herokuapp.com/repositories';
-// const apiTwo = 'https://trendings.herokuapp.com/repo';
+const api = 'https://gh-trending-api.herokuapp.com/repositories?since=weekly';
 
 const trendingAsync = createAsyncThunk(
   'rockets/fetchProjects',

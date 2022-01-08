@@ -10,8 +10,7 @@ const App = () => {
   const dispatch = useDispatch();
   const projects = useSelector((state) => state.trending.projects);
   const loaded = useSelector((state) => state.trending.status === 'loaded');
-
-  console.log(projects);
+  const loading = useSelector((state) => state.trending.status === 'loading');
 
   useEffect(() => {
     if (!loaded) {
@@ -25,6 +24,7 @@ const App = () => {
         <h1> Github Trending </h1>
       </div>
       <div id="project-cards">
+        {loading ? 'Loading' : ''}
         {projects.map((project) => <ProjectCard key={project.rank} project={project} />)}
       </div>
     </div>
