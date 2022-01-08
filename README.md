@@ -1,17 +1,48 @@
 # github-trending
 
+Github Trending is a Single Page Application built in React
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Display trending repositories on Github
+- Displays repository details when you click on a repo
+- Designed for mobile screens
+## Live Demo
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Live Demo Link](https://mystifying-babbage-84d2f3.netlify.app)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- Javascript (ES6)
+- React
+- Redux
+- Atom
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+
+- Clone the repository
+- Navigate to the root directory of the project
+- Run `npm install` to install the dependencies
+- Run `npm run start` to launch the web server
+
+## Authors
+
+👤 **Alaukik**
+
+- Github: [@newhorizon-tech](https://github.com/newhorizon-tech)
+- Twitter: [@techintosh3](https://twitter.com/techintosh3)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/newhorizon-tech/github-trending/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+The source code is licensed under GNU General Public License, version 3 (GPL-3.0)
