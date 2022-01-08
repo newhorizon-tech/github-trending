@@ -1,19 +1,33 @@
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+import PropTypes from 'prop-types';
 
 const ProjectCard = (props) => {
   const navigate = useNavigate();
-  const {project} = props
+  const { project } = props;
   return (
-    <div className="project-card" onClick={() => navigate(`/projects/${project.rank}`)}>
+    <button
+      className="project-card"
+      type="button"
+      onClick={() => navigate(`/projects/${project.rank}`)}
+    >
       <span className="name">
         {project.repositoryName}
       </span>
       <span>
-      {project.starsSince}
+        {project.starsSince}
       </span>
-    </div>
+    </button>
 
   );
-}
+};
 
-export default ProjectCard
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    rank: PropTypes.number,
+    repositoryName: PropTypes.string,
+    starsSince: PropTypes.number,
+  }).isRequired,
+};
+
+export default ProjectCard;

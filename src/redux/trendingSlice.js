@@ -1,13 +1,13 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const corsURL = 'https://cors-for.herokuapp.com/';
-const apiOne = 'https://gh-trending-api.herokuapp.com/repositories';
-const apiTwo = 'https://trendings.herokuapp.com/repo';
+const api = 'https://gh-trending-api.herokuapp.com/repositories';
+// const apiTwo = 'https://trendings.herokuapp.com/repo';
 
 const trendingAsync = createAsyncThunk(
   'rockets/fetchProjects',
   async () => {
-    const response = await fetch(corsURL+apiOne);
+    const response = await fetch(corsURL + api);
     const data = await response.json();
     return data;
   },
@@ -16,7 +16,7 @@ const trendingAsync = createAsyncThunk(
 const trendingSlice = createSlice({
   name: 'TrendingProjects',
   initialState: { status: '', projects: [] },
-  reducers: {  },
+  reducers: { },
   extraReducers: (builder) => {
     builder
       .addCase(trendingAsync.pending, (state) => {

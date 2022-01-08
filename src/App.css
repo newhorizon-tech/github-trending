@@ -9,7 +9,9 @@ html, body {
 }
 
 #header {
-  height: 150px;
+  height: 110px;
+  background: green;
+  color: white;
 }
 
 #project-cards {
@@ -25,4 +27,14 @@ html, body {
   border: 1px solid black;
   color: white;
   height: 150px;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-body p, .built-box {
+  padding: 10px 0;
+  border: 1px solid black;
 }

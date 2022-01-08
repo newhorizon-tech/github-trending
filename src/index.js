@@ -1,32 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { store } from './redux/store';
 import { Provider } from 'react-redux';
-  import {
-  Routes, Route, BrowserRouter as Router
+import {
+  Routes, Route, BrowserRouter as Router,
 } from 'react-router-dom';
+import App from './App';
+import store from './redux/store';
 
-import ProjectCard from './components/ProjectCard'
-import TrendingProject from './components/TrendingProject'
+import TrendingProject from './components/TrendingProject';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-     <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={<App />}
-        />
-        <Route
-          path="/projects/:projectId"
-          element={<TrendingProject />}
-        />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={<App />}
+          />
+          <Route
+            path="/projects/:projectId"
+            element={<TrendingProject />}
+          />
+        </Routes>
       </Router>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

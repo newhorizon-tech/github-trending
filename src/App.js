@@ -1,23 +1,19 @@
 import './App.css';
 
-import {useEffect} from 'react';
-import {useSelector, useDispatch} from 'react-redux'
-import {trendingAsync} from './redux/trendingSlice';
-import { Routes, Route, useParams } from "react-router-dom";
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { trendingAsync } from './redux/trendingSlice';
 
-
-import ProjectCard from './components/ProjectCard'
-import TrendingProject from './components/TrendingProject'
-
+import ProjectCard from './components/ProjectCard';
 
 const App = () => {
-   const dispatch = useDispatch();
-   const projects = useSelector(state => state.trending.projects);
-   const loaded = useSelector(state => state.trending.status === 'loaded');
+  const dispatch = useDispatch();
+  const projects = useSelector((state) => state.trending.projects);
+  const loaded = useSelector((state) => state.trending.status === 'loaded');
 
-   console.log(projects)
+  console.log(projects);
 
-    useEffect(() => {
+  useEffect(() => {
     if (!loaded) {
       dispatch(trendingAsync());
     }
@@ -25,14 +21,14 @@ const App = () => {
 
   return (
     <div>
-     <div id="header">
+      <div id="header">
         <h1> Github Trending </h1>
       </div>
       <div id="project-cards">
-        {projects.map(project => <ProjectCard key={project.rank} project={project} /> )}
+        {projects.map((project) => <ProjectCard key={project.rank} project={project} />)}
       </div>
     </div>
   );
-}
+};
 
 export default App;
