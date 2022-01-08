@@ -7,9 +7,10 @@ Github Trending is a Single Page Application built in React
 - Display trending repositories on Github
 - Displays repository details when you click on a repo
 - Designed for mobile screens
+
 ## Live Demo
 
-[Live Demo Link](https://mystifying-babbage-84d2f3.netlify.app)
+[Live Demo Link](https://github-trending-2022.netlify.app)
 
 ## Built With
 
