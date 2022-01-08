@@ -27,7 +27,8 @@ const ProjectDetails = (props) => {
           type="button"
           onClick={() => navigate('/')}
         >
-          {'> Back'}
+          <span className="back-symbol"> &#10140;</span>
+          Back
         </button>
         <h1>
           {trimString(project.repositoryName)}

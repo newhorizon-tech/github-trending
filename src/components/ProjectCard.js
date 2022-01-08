@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
   const { project } = props;
   return (
     <button
-      className="project-card"
+      className={`project-card card-${project.rank % 4}`}
       type="button"
       onClick={() => navigate(`/projects/${project.rank}`)}
     >
