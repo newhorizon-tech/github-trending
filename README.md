@@ -34,6 +34,11 @@ Github Trending is a Single Page Application built in React
 - Twitter: [@techintosh3](https://twitter.com/techintosh3)
 
 
+## Acknowledgement
+
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
