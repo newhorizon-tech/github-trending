@@ -8,6 +8,7 @@ const trendingAsync = createAsyncThunk(
   async () => {
     const response = await fetch(corsURL + api);
     const data = await response.json();
+    console.log(data);
     return data;
   },
 );
@@ -19,6 +20,11 @@ const trendingSlice = createSlice({
     search: (state, action) => {
       const newState = { ...state };
       newState.search = action.payload;
+      return newState;
+    },
+    addProjects: (state, action) => {
+      const newState = { ...state };
+      newState.projects = action.payload;
       return newState;
     },
   },
@@ -40,6 +46,6 @@ const trendingSlice = createSlice({
 
 export default trendingSlice.reducer;
 
-export const { search } = trendingSlice.actions;
+export const { search, addProjects } = trendingSlice.actions;
 
 export { trendingAsync };
