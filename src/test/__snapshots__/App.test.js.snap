@@ -1,0 +1,478 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          id="header"
+        >
+          <h1>
+             Github Trending 
+          </h1>
+          <input
+            id="search-bar"
+            placeholder="Search"
+            value=""
+          />
+        </div>
+        <span
+          class="loading"
+        >
+          <svg
+            fill="none"
+            style="overflow: visible; width: 71px;"
+            viewBox="0 0 131 55"
+          >
+            <defs>
+              <path
+                d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+                id="spinners-react-infinity-path"
+              />
+            </defs>
+            <use
+              stroke=""
+              stroke-width="9.450000000000001"
+              xlink:href="#spinners-react-infinity-path"
+            />
+            <use
+              fill="none"
+              stroke="currentColor"
+              stroke-dasharray="1, 347"
+              stroke-dashoffset="75"
+              stroke-linecap="round"
+              stroke-width="9.450000000000001"
+              style="animation: spinners-react-infinity 1.037037037037037s linear infinite;"
+              xlink:href="#spinners-react-infinity-path"
+            />
+          </svg>
+        </span>
+        <div
+          id="project-cards"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        id="header"
+      >
+        <h1>
+           Github Trending 
+        </h1>
+        <input
+          id="search-bar"
+          placeholder="Search"
+          value=""
+        />
+      </div>
+      <span
+        class="loading"
+      >
+        <svg
+          fill="none"
+          style="overflow: visible; width: 71px;"
+          viewBox="0 0 131 55"
+        >
+          <defs>
+            <path
+              d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+              id="spinners-react-infinity-path"
+            />
+          </defs>
+          <use
+            stroke=""
+            stroke-width="9.450000000000001"
+            xlink:href="#spinners-react-infinity-path"
+          />
+          <use
+            fill="none"
+            stroke="currentColor"
+            stroke-dasharray="1, 347"
+            stroke-dashoffset="75"
+            stroke-linecap="round"
+            stroke-width="9.450000000000001"
+            style="animation: spinners-react-infinity 1.037037037037037s linear infinite;"
+            xlink:href="#spinners-react-infinity-path"
+          />
+        </svg>
+      </span>
+      <div
+        id="project-cards"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders ProjectCard snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          id="header"
+        >
+          <h1>
+             Github Trending 
+          </h1>
+          <input
+            id="search-bar"
+            placeholder="Search"
+            value=""
+          />
+        </div>
+        <span
+          class="loading"
+        >
+          <svg
+            fill="none"
+            style="overflow: visible; width: 71px;"
+            viewBox="0 0 131 55"
+          >
+            <defs>
+              <path
+                d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+                id="spinners-react-infinity-path"
+              />
+            </defs>
+            <use
+              stroke=""
+              stroke-width="9.450000000000001"
+              xlink:href="#spinners-react-infinity-path"
+            />
+            <use
+              fill="none"
+              stroke="currentColor"
+              stroke-dasharray="1, 347"
+              stroke-dashoffset="75"
+              stroke-linecap="round"
+              stroke-width="9.450000000000001"
+              style="animation: spinners-react-infinity 1.037037037037037s linear infinite;"
+              xlink:href="#spinners-react-infinity-path"
+            />
+          </svg>
+        </span>
+        <div
+          id="project-cards"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        id="header"
+      >
+        <h1>
+           Github Trending 
+        </h1>
+        <input
+          id="search-bar"
+          placeholder="Search"
+          value=""
+        />
+      </div>
+      <span
+        class="loading"
+      >
+        <svg
+          fill="none"
+          style="overflow: visible; width: 71px;"
+          viewBox="0 0 131 55"
+        >
+          <defs>
+            <path
+              d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+              id="spinners-react-infinity-path"
+            />
+          </defs>
+          <use
+            stroke=""
+            stroke-width="9.450000000000001"
+            xlink:href="#spinners-react-infinity-path"
+          />
+          <use
+            fill="none"
+            stroke="currentColor"
+            stroke-dasharray="1, 347"
+            stroke-dashoffset="75"
+            stroke-linecap="round"
+            stroke-width="9.450000000000001"
+            style="animation: spinners-react-infinity 1.037037037037037s linear infinite;"
+            xlink:href="#spinners-react-infinity-path"
+          />
+        </svg>
+      </span>
+      <div
+        id="project-cards"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders ProjectDetails snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          id="header"
+        >
+          <h1>
+             Github Trending 
+          </h1>
+          <input
+            id="search-bar"
+            placeholder="Search"
+            value=""
+          />
+        </div>
+        <span
+          class="loading"
+        >
+          <svg
+            fill="none"
+            style="overflow: visible; width: 71px;"
+            viewBox="0 0 131 55"
+          >
+            <defs>
+              <path
+                d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+                id="spinners-react-infinity-path"
+              />
+            </defs>
+            <use
+              stroke=""
+              stroke-width="9.450000000000001"
+              xlink:href="#spinners-react-infinity-path"
+            />
+            <use
+              fill="none"
+              stroke="currentColor"
+              stroke-dasharray="1, 347"
+              stroke-dashoffset="75"
+              stroke-linecap="round"
+              stroke-width="9.450000000000001"
+              style="animation: spinners-react-infinity 1.037037037037037s linear infinite;"
+              xlink:href="#spinners-react-infinity-path"
+            />
+          </svg>
+        </span>
+        <div
+          id="project-cards"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        id="header"
+      >
+        <h1>
+           Github Trending 
+        </h1>
+        <input
+          id="search-bar"
+          placeholder="Search"
+          value=""
+        />
+      </div>
+      <span
+        class="loading"
+      >
+        <svg
+          fill="none"
+          style="overflow: visible; width: 71px;"
+          viewBox="0 0 131 55"
+        >
+          <defs>
+            <path
+              d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+              id="spinners-react-infinity-path"
+            />
+          </defs>
+          <use
+            stroke=""
+            stroke-width="9.450000000000001"
+            xlink:href="#spinners-react-infinity-path"
+          />
+          <use
+            fill="none"
+            stroke="currentColor"
+            stroke-dasharray="1, 347"
+            stroke-dashoffset="75"
+            stroke-linecap="round"
+            stroke-width="9.450000000000001"
+            style="animation: spinners-react-infinity 1.037037037037037s linear infinite;"
+            xlink:href="#spinners-react-infinity-path"
+          />
+        </svg>
+      </span>
+      <div
+        id="project-cards"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

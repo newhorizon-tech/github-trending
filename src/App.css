@@ -1,0 +1,108 @@
+:root {
+  /* Mint and Sailor Blue */
+  --light: #adefd1ff;
+  --dark: #00203fff;
+
+  /* Black and White */
+
+  /* --light:  #ececec;
+   --dark: #00070d; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 130px;
+  background: var(--dark);
+  color: var(--light);
+}
+
+#search-bar {
+  height: 20px;
+  border: none;
+  padding: 2px;
+}
+
+#project-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-card {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  height: 150px;
+}
+
+.card-1,
+.card-0 {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card-2,
+.card-3 {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+a:nth-child(an+b) .project-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-body p,
+.built-box {
+  padding: 10px 0;
+  border: 1px solid var(--dark);
+}
+
+.creators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creators img {
+  width: 60px;
+  margin: 0 2px;
+}
+
+.back-button {
+  background: var(--light);
+  padding: 3px;
+  color: var(--dark);
+  border: none;
+}
+
+.back-symbol {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
