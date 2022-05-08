@@ -106,3 +106,5 @@ a:nth-child(an+b) .project-body {
   justify-content: center;
   margin: 50px;
 }
+
+a.no-format-link { text-decoration: none; color: inherit;}

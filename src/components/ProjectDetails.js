@@ -31,7 +31,9 @@ const ProjectDetails = (props) => {
           Back
         </button>
         <h1>
-          {trimString(project.repositoryName)}
+          <a className="no-format-link" href={project.url}>
+            {trimString(project.repositoryName)}
+          </a>
         </h1>
         <h2>
           #
@@ -92,6 +94,7 @@ ProjectDetails.propTypes = {
     totalStars: PropTypes.number,
     forks: PropTypes.number,
     repositoryName: PropTypes.string,
+    url: PropTypes.string,
     starsSince: PropTypes.number,
     builtBy: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
   }).isRequired,
